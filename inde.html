@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-zinc-100 dark:bg-zinc-900 flex flex-col">
+  <div class="bg-white dark:bg-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="border-b border-zinc-200 dark:border-zinc-700">
+        <nav class="-mb-px flex" aria-label="Progress">
+          <a href="#" class="group flex py-4 px-1 text-sm font-medium leading-5 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white focus:outline-none focus:text-zinc-900 dark:focus:text-white transition ease-in-out duration-150">
+            <span class="flex items-center">
+              <span class="h-5 w-5 bg-zinc-200 dark:bg-zinc-700 rounded-full flex items-center justify-center">
+                <span class="text-zinc-600 dark:text-zinc-400">01</span>
+              </span>
+              <span class="ml-2">Personal details</span>
+            </span>
+          </a>
+          <a href="#" class="group flex py-4 px-1 text-sm font-medium leading-5 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white focus:outline-none focus:text-zinc-900 dark:focus:text-white transition ease-in-out duration-150">
+            <span class="flex items-center">
+              <span class="h-5 w-5 bg-zinc-200 dark:bg-zinc-700 rounded-full flex items-center justify-center">
+                <span class="text-zinc-600 dark:text-zinc-400">02</span>
+              </span>
+              <span class="ml-2">Account details</span>
+            </span>
+          </a>
+          <a href="#" class="group flex py-4 px-1 text-sm font-medium leading-5 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white focus:outline-none focus:text-zinc-900 dark:focus:text-white transition ease-in-out duration-150">
+            <span class="flex items-center">
+              <span class="h-5 w-5 bg-zinc-200 dark:bg-zinc-700 rounded-full flex items-center justify-center">
+                <span class="text-zinc-600 dark:text-zinc-400">03</span>
+              </span>
+              <span class="ml-2">Final details</span>
+            </span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="flex-grow bg-zinc-100 dark:bg-zinc-900 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8">
+      <div>
+        <h2 class="mt-6 text-center text-3xl font-extrabold text-zinc-900 dark:text-white">
+          Start Your Financial Journey Today
+        </h2>
+        <p class="mt-2 text-center text-sm text-zinc-600 dark:text-zinc-400">
+          Set up your <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400">Easy access account</a>
+        </p>
+      </div>
+      <form id="signup-form" class="mt-8 space-y-6 bg-white dark:bg-zinc-800 p-8 rounded-lg shadow-md">
+        <div class="space-y-4">
+          <h3 class="text-lg leading-6 font-medium text-zinc-900 dark:text-white">
+            <span class="text-red-600">01</span> Personal details
+          </h3>
+          <p class="text-sm text-zinc-600 dark:text-zinc-400">
+            Tell us a bit about yourself
+          </p>
+          <div class="border-t border-zinc-200 dark:border-zinc-700 pt-4">
+            <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+              <div>
+                <h4 class="text-sm text-zinc-600 dark:text-zinc-400 font-bold">First Name</h4>
+                <label for="first-name" class="sr-only">First name</label>
+                <input id="first-name" name="first-name" type="text" autocomplete="given-name" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 placeholder-zinc-500 dark:placeholder-zinc-400 text-zinc-900 dark:text-white rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="First name">
+                <p id="first-name-error" class="text-red-600 hidden text-sm mt-1">Please enter a valid first name</p>
+              </div>
+              <div>
+                <h4 class="text-sm text-zinc-600 dark:text-zinc-400 font-bold">Middle Name</h4>
+                <label for="middle-name" class="sr-only">Middle name</label>
+                <input id="middle-name" name="middle-name" type="text" class="appearance-none rounded-none relative block w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 placeholder-zinc-500 dark:placeholder-zinc-400 text-zinc-900 dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Middle name (optional)">
+              </div>
+              <div>
+                <h4 class="text-sm text-zinc-600 dark:text-zinc-400 font-bold">Last Name</h4>
+                <label for="last-name" class="sr-only">Last name</label>
+                <input id="last-name" name="last-name" type="text" autocomplete="family-name" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 placeholder-zinc-500 dark:placeholder-zinc-400 text-zinc-900 dark:text-white rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Last name">
+                <p id="last-name-error" class="text-red-600 hidden text-sm mt-1">Please enter a valid last name</p>
+              </div>
+              <div>
+                <h4 class="text-sm text-zinc-600 dark:text-zinc-400 font-bold">Date of Birth</h4>
+                <label for="dob" class="sr-only">Date of Birth</label>
+                <div class="flex space-x-2">
+                  <input id="dob-day" name="dob-day" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 placeholder-zinc-500 dark:placeholder-zinc-400 text-zinc-900 dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="DD">
+                  <input id="dob-month" name="dob-month" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 placeholder-zinc-500 dark:placeholder-zinc-400 text-zinc-900 dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="MM">
+                  <input id="dob-year" name="dob-year" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 placeholder-zinc-500 dark:placeholder-zinc-400 text-zinc-900 dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="YYYY">
+                  <p id="dob-error" class="text-red-600 hidden text-sm mt-1">Please enter a valid date of birth (18 years or above)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="continue-btn" type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 dark:bg-indigo-400 dark:hover:bg-indigo-300 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
